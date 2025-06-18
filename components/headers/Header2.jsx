@@ -121,7 +121,7 @@ export default function Header2() {
                     onClick={() => handleScroll('focus-areas')}
                     className="tf-btn btn-border hide-sm h36 rounded-0"
                   >
-                    <span className="text-caption-3">Get Started</span>
+                    <span className="text-caption-3">Get in touch</span>
                     <span className="bg-effect" />
                   </button>
                   <button

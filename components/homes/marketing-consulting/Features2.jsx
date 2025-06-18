@@ -110,9 +110,9 @@ export default function Features2() {
               <div className="img-style effect-item effect-left">
                 <Image
                   className="lazyload"
-                  data-src="/images/section/service-5.jpg"
+                  data-src="/images/section/case-studies-23.jpg"
                   alt="service"
-                  src="/images/section/service-5.jpg"
+                  src="/images/section/case-studies-23.jpg"
                   width={651}
                   height={691}
                 />
@@ -188,9 +188,9 @@ export default function Features2() {
               <div className="img-style effect-item effect-left">
                 <Image
                   className="lazyload"
-                  data-src="/images/section/service-6.jpg"
+                  data-src="/images/section/case-studies-24.jpg"
                   alt="service"
-                  src="/images/section/service-6.jpg"
+                  src="/images/section/case-studies-24.jpg"
                   width={651}
                   height={691}
                 />
@@ -253,9 +253,9 @@ export default function Features2() {
               <div className="img-style effect-item effect-left">
                 <Image
                   className="lazyload"
-                  data-src="/images/section/service-7.jpg"
+                  data-src="/images/section/case-studies-22.jpg"
                   alt="service"
-                  src="/images/section/service-7.jpg"
+                  src="/images/section/case-studies-22.jpg"
                   width={651}
                   height={691}
                 />
@@ -322,9 +322,9 @@ export default function Features2() {
               <div className="img-style effect-item effect-left">
                 <Image
                   className="lazyload"
-                  data-src="/images/section/service-8.jpg"
+                  data-src="/images/section/case-studies-21.jpg"
                   alt="service"
-                  src="/images/section/service-8.jpg"
+                  src="/images/section/case-studies-21.jpg"
                   width={651}
                   height={691}
                 />

@@ -1,20 +1,26 @@
 "use client";
-import {
-  blogPages,
-  homepages,
-  otherPages,
-  servicePages,
-  shopPages,
-} from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function Mobilemenu() {
-  const pathname = usePathname();
-  const isActive = (link) => link.split("/")[1] == pathname.split("/")[1];
-  const isActiveParent = (links) => links.some((link) => isActive(link.href));
+  const handleScroll = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+    // Close the mobile menu after clicking
+    const offcanvasElement = document.getElementById('menu-mobile');
+    if (offcanvasElement) {
+      const bsOffcanvas = window.bootstrap?.Offcanvas?.getInstance(offcanvasElement);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    }
+  };
 
   return (
     <div className="offcanvas offcanvas-start canvas-mb" id="menu-mobile">
@@ -22,9 +28,9 @@ export default function Mobilemenu() {
         <Link href={`/`} className="logo">
           <Image
             alt="logo"
-            src="/images/logo/footer-logo.png"
-            width={390}
-            height={80}
+            src="/images/logo/footer-logo1.png"
+            width={140}
+            height={40}
           />
         </Link>
         <div className="close-menu" data-bs-dismiss="offcanvas">
@@ -35,194 +41,95 @@ export default function Mobilemenu() {
         <div className="mb-body">
           <div className="mb-content-top">
             <ul className="nav-ul-mb" id="wrapper-menu-navigation">
-              <li
-                className={`nav-mb-item ${
-                  isActiveParent(homepages) ? "active" : ""
-                }`}
-              >
-                <a
-                  href="#dropdown-menu-home"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-home"
+              <li className="nav-mb-item">
+                <button
+                  onClick={() => handleScroll('home')}
+                  className="mb-menu-link"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    padding: 0,
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
                 >
-                  <span>Home</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-home"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {homepages.map((item, index) => (
-                      <li key={index}>
-                        <Link
-                          href={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  Home
+                </button>
               </li>
-              <li
-                className={`nav-mb-item ${
-                  isActiveParent(otherPages) ? "active" : ""
-                }`}
-              >
-                <a
-                  href="#dropdown-menu-pages"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-pages"
+              <li className="nav-mb-item">
+                <button
+                  onClick={() => handleScroll('services')}
+                  className="mb-menu-link"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    padding: 0,
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
                 >
-                  <span>Pages</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-pages"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {otherPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  Services
+                </button>
               </li>
-              <li
-                className={`nav-mb-item ${
-                  isActiveParent(servicePages) ? "active" : ""
-                }`}
-              >
-                <a
-                  href="#dropdown-menu-services"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-services"
+              <li className="nav-mb-item">
+                <button
+                  onClick={() => handleScroll('focus-areas')}
+                  className="mb-menu-link"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    padding: 0,
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
                 >
-                  <span>Serivce</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-services"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {servicePages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  Focus Areas
+                </button>
               </li>
-              <li
-                className={`nav-mb-item ${
-                  isActiveParent(blogPages) ? "active" : ""
-                }`}
-              >
-                <a
-                  href="#dropdown-menu-blog"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-blog"
+              <li className="nav-mb-item">
+                <button
+                  onClick={() => handleScroll('team')}
+                  className="mb-menu-link"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    padding: 0,
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
                 >
-                  <span>Blog</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-blog"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {blogPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  Team
+                </button>
               </li>
-              <li
-                className={`nav-mb-item ${
-                  isActiveParent(shopPages) ? "active" : ""
-                }`}
-              >
-                <a
-                  href="#dropdown-menu-shop"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-shop"
+              <li className="nav-mb-item">
+                <button
+                  onClick={() => handleScroll('about')}
+                  className="mb-menu-link"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    padding: 0,
+                    width: '100%',
+                    textAlign: 'left'
+                  }}
                 >
-                  <span>Shop</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-shop"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {shopPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-              <li
-                className={`nav-mb-item ${
-                  isActive("/contact-us") ? "active" : ""
-                }`}
-              >
-                <Link href={`/contact-us`} className="mb-menu-link">
-                  Contact
-                </Link>
+                  About Us
+                </button>
               </li>
             </ul>
           </div>
@@ -230,47 +137,30 @@ export default function Mobilemenu() {
             <ul className="mb-info mb_20">
               <li>
                 <p className="text_mono-gray">
-                  Address:
-                  <a
-                    target="_blank"
-                    href="https://www.google.com/maps?q=16/9,ScotlandUnitedKingdom"
-                  >
+                  Support:
+                  <a href="tel:+12341096666">
                     <span className="fw-5 text_mono-gray-5">
-                      16/9, Scotland United Kingdom
-                    </span>
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p className="text_mono-gray">
-                  Email:
-                  <a href="mailto:themesflat@gmail.com">
-                    <span className="fw-5 text_mono-gray-5">
-                      themesflat@gmail.com
-                    </span>
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p className="text_mono-gray">
-                  Phone:
-                  <a href="tel:+11635565389">
-                    <span className="fw-5 text_mono-gray-5">
-                      +1 16355 65389
+                      24/7 Support: (234) 109-6666
                     </span>
                   </a>
                 </p>
               </li>
             </ul>
             <div className="mb-wrap-btn d-flex gap_12">
-              <Link href={`/pricing`} className="tf-btn">
-                <span>Get Started</span>
+              <button
+                onClick={() => handleScroll('focus-areas')}
+                className="tf-btn btn-border"
+              >
+                <span>Get in touch</span>
                 <span className="bg-effect" />
-              </Link>
-              <Link href={`/contact-us`} className="tf-btn">
+              </button>
+              <button
+                onClick={() => handleScroll('contact')}
+                className="tf-btn"
+              >
                 <span>Contact Us</span>
                 <span className="bg-effect" />
-              </Link>
+              </button>
             </div>
           </div>
         </div>
