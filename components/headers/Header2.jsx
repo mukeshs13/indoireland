@@ -43,7 +43,7 @@ export default function Header2() {
                             color: 'inherit',
                             font: 'inherit',
                             cursor: 'pointer',
-                            padding: 0
+                            padding: 3
                           }}
                         >
                           Home
@@ -58,7 +58,7 @@ export default function Header2() {
                             color: 'inherit',
                             font: 'inherit',
                             cursor: 'pointer',
-                            padding: 0
+                            padding: 3
                           }}
                         >
                           Services
@@ -73,7 +73,7 @@ export default function Header2() {
                             color: 'inherit',
                             font: 'inherit',
                             cursor: 'pointer',
-                            padding: 0
+                            padding: 3
                           }}
                         >
                           Focus Areas
@@ -88,7 +88,7 @@ export default function Header2() {
                             color: 'inherit',
                             font: 'inherit',
                             cursor: 'pointer',
-                            padding: 0
+                            padding: 3
                           }}
                         >
                           Team
@@ -103,7 +103,7 @@ export default function Header2() {
                             color: 'inherit',
                             font: 'inherit',
                             cursor: 'pointer',
-                            padding: 0
+                            padding: 3
                           }}
                         >
                           About Us
