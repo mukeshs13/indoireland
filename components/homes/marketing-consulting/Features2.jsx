@@ -129,21 +129,18 @@ export default function Features2() {
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> We offering
-                      customized strategies that truly work for you
+                      <i className="icon-check-cycle-line" /> 
+                      Tailored strategies for market entry and business growth.
                     </li>
                     <li className="text-body-1 text_white">
                       <i className="icon-check-cycle-line" />
-                      Brings the knowledge and insights you need to make
-                      informed decisions that drive success.
+                      In-depth analysis of Ireland-India trade opportunities.
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> Cancel anytime you
-                      want
+                      <i className="icon-check-cycle-line" /> Support in building scalable and sustainable business models.
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> Proven Results and
-                      Client Satisfaction
+                      <i className="icon-check-cycle-line" /> Continuous guidance to adapt to market changes.
                     </li>
                 </ul>
                   {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -205,20 +202,16 @@ export default function Features2() {
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Personalized
-                    approaches crafted for your specific needs
+                    <i className="icon-check-cycle-line" /> Facilitate B2B introductions across Ireland and India.
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Strategic insights
-                    to turn your goals into measurable outcomes
+                    <i className="icon-check-cycle-line" /> Draft and coordinate strategic MOUs and agreements.
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Strategic insights
-                    to turn your goals into measurable outcomes
+                    <i className="icon-check-cycle-line" /> Organize trade missions, expos, and networking events.
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Flexibility to adapt
-                    as your priorities change
+                    <i className="icon-check-cycle-line" /> Strengthen bilateral trade through trusted partnerships.
                   </li>
                 </ul>
                 {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -274,20 +267,19 @@ export default function Features2() {
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> End-to-end solutions
-                    tailored to your requirements
+                    <i className="icon-check-cycle-line" /> Assistance with legal documentation and regulatory compliance.
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Transparent workflows for clarity and trust
+                    Guidance on import-export rules and trade policies.
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Exceptional expertise ensuring timely results
+                    Partner with reliable logistics providers for smooth operations.
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Proven methodologies backed by client success stories
+                    Mitigate risks with expert legal insights.
                   </li>
                 </ul>
                 {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -344,16 +336,19 @@ export default function Features2() {
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Data-driven evaluations to measure performance
+                    Spot viable sectors for bilateral investment and collaboration.
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Brings the knowledge and insights you need to make informed
-                    decisions that drive success.
+                    Evaluate market needs and resource availability.
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Agile strategies to refine and improve results
+                    Connect businesses with government-led initiatives and grants.
+                  </li>
+                  <li className="text-body-1 text_white">
+                    <i className="icon-check-cycle-line" />
+                    Recommend projects with high ROI and impact.
                   </li>
                 </ul>
                 {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">

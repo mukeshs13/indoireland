@@ -5,7 +5,7 @@ export const serviceBoxes = [
     iconSrc: "/images/box-icon/money-bag-02.svg",
     title: "International IT & AI Startups",
     description:
-      "Protect your assets and minimize exposure to financial risks by identifying potential vulnerabilities",
+      "Global-ready ecosystem supporting innovative IT and AI startups with infrastructure, talent, and funding access.",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const serviceBoxes = [
     iconSrc: "/images/box-icon/briefcase-03.svg",
     title: " Food Processing & Pharmaceuticals",
     description:
-      "We create customized portfolios tailored to your financial objectives, leveraging data-driven insights and market expertise",
+      "Advanced clusters for high-quality food and pharma manufacturing with export and compliance-ready support.",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const serviceBoxes = [
     iconSrc: "/images/box-icon/taxes.svg",
     title: " Green Energy & Hydro Power",
     description:
-      "We specialize in structuring your finances to reduce tax liabilities, ensuring compliance while optimizing your financial position",
+      "Sustainable zones enabling green energy projects with policy backing and renewable infrastructure.",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const serviceBoxes = [
     iconSrc: "/images/box-icon/money-bag-02.svg",
     title: "Logistics & Warehousing",
     description:
-      "Protect your assets and minimize exposure to financial risks by identifying potential vulnerabilities",
+      "Strategic logistics hubs offering seamless connectivity, smart warehousing, and cross-border trade efficiency.",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const serviceBoxes = [
     iconSrc: "/images/box-icon/briefcase-03.svg",
     title: " Global Herbal & Ayurvedic Parks",
     description:
-      "We create customized portfolios tailored to your financial objectives, leveraging data-driven insights and market expertise",
+      "Modern parks supporting herbal wellness and Ayurvedic exports with certified, eco-conscious facilities.",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const serviceBoxes = [
     iconSrc: "/images/box-icon/taxes.svg",
     title: "Export & Import",
     description:
-      "We specialize in structuring your finances to reduce tax liabilities, ensuring compliance while optimizing your financial position",
+      "Integrated export-import zones with global market access, streamlined operations, and customs facilitation.",
   },
 ];
 export const services = [
