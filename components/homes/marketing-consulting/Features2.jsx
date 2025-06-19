@@ -147,7 +147,7 @@ export default function Features2() {
                       Client Satisfaction
                     </li>
                   </ul>
-                  <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
+                  {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
                     <div className="avatar rounded-cycle overflow-hidden">
                       <Image
                         alt="avatar"
@@ -172,7 +172,7 @@ export default function Features2() {
                         John Sena - CEO of Kling
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function Features2() {
                     as your priorities change
                   </li>
                 </ul>
-                <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
+                {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
                   <div className="avatar rounded-cycle overflow-hidden">
                     <Image
                       alt="avatar"
@@ -238,7 +238,7 @@ export default function Features2() {
                       Alex Boar - CEO of Marcus
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -288,7 +288,7 @@ export default function Features2() {
                     Proven methodologies backed by client success stories
                   </li>
                 </ul>
-                <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
+                {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
                   <div className="avatar rounded-cycle overflow-hidden">
                     <Image
                       alt="avatar"
@@ -307,7 +307,7 @@ export default function Features2() {
                       Elise Chrona - CEO of Minga
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -354,7 +354,7 @@ export default function Features2() {
                     Agile strategies to refine and improve results
                   </li>
                 </ul>
-                <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
+                {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
                   <div className="avatar rounded-cycle overflow-hidden">
                     <Image
                       alt="avatar"
@@ -375,7 +375,7 @@ export default function Features2() {
                       Elise Chrona - CEO of Minga
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
