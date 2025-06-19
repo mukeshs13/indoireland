@@ -110,31 +110,9 @@ export default function Footer5() {
                   </div>
                 </div>
               </div>
-              <div className="footer-body">
+              <div className="footer-body mb_10">
                 <div className="left flex-md-row">
                   {/* Desktop view - show services and home sections */}
-                  {/* <div className="footer-col-block d-none d-md-block">
-                    <div className="text-body-1 footer-heading text_white fw-5">
-                      Services
-                    </div>
-                    <div className="tf-collapse-content">
-                      <ul className="footer-menu-list">
-                        {services.map((service, index) => (
-                          <li
-                            key={index}
-                            className="text-body-3 text_mono-gray-8"
-                          >
-                            <Link
-                              href={`/service-details/${service.id}`}
-                              className="link footer-menu_item"
-                            >
-                              {service.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div> */}
                   <div className="footer-col-block d-none d-md-block">
                     <div 
                       className="text-body-1 footer-heading text_white fw-5"
@@ -233,65 +211,6 @@ export default function Footer5() {
                       </ul>
                     </div>
                   </div>
-                  {/* <div className="footer-col-block d-none d-md-block">
-                    <div className="text-body-1 footer-heading text_white fw-5">
-                      Resources
-                    </div>
-                    <div className="tf-collapse-content">
-                      <ul className="footer-menu-list">
-                        <li className="text-body-3 text_mono-gray-8">
-                          <button
-                            onClick={() => handleScroll('about')}
-                            className="link footer-menu_item"
-                            style={{
-                              background: 'none',
-                              border: 'none',
-                              color: 'inherit',
-                              font: 'inherit',
-                              cursor: 'pointer',
-                              padding: 0,
-                              textAlign: 'left'
-                            }}
-                          >
-                            About Advitex
-                          </button>
-                        </li>
-                        <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/blog`}
-                            className="link footer-menu_item"
-                          >
-                            Blog
-                          </Link>
-                        </li>
-                        <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/faqs`}
-                            className="link footer-menu_item"
-                          >
-                            FAQs
-                          </Link>
-                        </li>
-                        <li className="text-body-3 text_mono-gray-8">
-                          <button
-                            onClick={() => handleScroll('contact')}
-                            className="link footer-menu_item"
-                            style={{
-                              background: 'none',
-                              border: 'none',
-                              color: 'inherit',
-                              font: 'inherit',
-                              cursor: 'pointer',
-                              padding: 0,
-                              textAlign: 'left'
-                            }}
-                          >
-                            Contact Us
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div> */}
 
                   {/* Mobile view - simple menu list without toggles */}
                   <div className="footer-col-block d-block d-md-none">
@@ -404,53 +323,67 @@ export default function Footer5() {
                     </ul>
                   </div>
                 </div>
+                
+                {/* Updated address section with side-by-side layout - Two lines only */}
                 <div className="right">
                   <div className="footer-about">
-                    <div className="footer-info mb_51">
-                      <a href="#" className="link text-body-2 text_white">
-                        Info@indoireland.com
-                      </a>
-                      <div className="text-body-2 text_white">
-                        Dublin,
-                        Ireland, D1
+                    <div className="row g-4">
+                      {/* India Office */}
+                      <div className="col-md-6">
+                        <div className="footer-info">
+                          <div className="text-body-2 text_white fw-5 mb-3">
+                            India Office
+                          </div>
+                          <div className="address-details">
+                            <a href="mailto:info@indoireland.com" className="link text-body-3 text_white d-block mb-2">
+                              info@indoireland.com
+                            </a>
+                            <div className="text-body-3 text_white mb-1">
+                              SKC Tower, 14/236J - Maradu, Opp. Forum Mall
+                            </div>
+                            <div className="text-body-3 text_white mb-2">
+                              Cochin - Ernakulam, Kerala, India - 682304
+                            </div>
+                            <div className="text-body-3 text_white">
+                              (+91) 9847762420
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div className="text-body-2 text_white">
-                        (+068) 568 9696
+                      
+                      {/* Ireland Office */}
+                      <div className="col-md-6">
+                        <div className="footer-info">
+                          <div className="text-body-2 text_white fw-5 mb-3">
+                            Ireland Office
+                          </div>
+                          <div className="address-details">
+                            <a href="mailto:Info@indoireland.com" className="link text-body-3 text_white d-block mb-2">
+                              Info@indoireland.com
+                            </a>
+                            <div className="text-body-3 text_white mb-1">
+                              Unit 1 New Bancroft Hall, Old Main Street
+                            </div>
+                            <div className="text-body-3 text_white mb-2">
+                              Tallaght, DUBLIN, Ireland, D24 N726
+                            </div>
+                            <div className="text-body-3 text_white">
+                              (+353) 87 293 0719
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="footer-bottom">
-                <div className="wrapper d-flex align-items-end flex-wrap gap_12">
-                  <ul className="left d-flex align-items-center">
-                    <li>
-                      <Link
-                        href={`/pricing`}
-                        className="link text_mono-gray-5 text-body-3"
-                      >
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <a href="#" className="link text_mono-gray-5 text-body-3">
-                        Terms of Services
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="link text_mono-gray-5 text-body-3">
-                        Virtual Reality
-                      </a>
-                    </li>
-                  </ul>
-                  
-                </div>
                 <p className="text-body-3 text-center text_mono-gray-5">
                   © {new Date().getFullYear()} Copyright by{" "}
                   <a href="#" className="link text_mono-gray-5 text-body-3">
-                    Indoireland
+                    Indoireland.
                   </a>{" "}
-                  . All Right Reserved.
+                   All Right Reserved.
                 </p>
               </div>
             </div>

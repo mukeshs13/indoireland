@@ -115,7 +115,7 @@ export default function Header2() {
                 <div className="header-right d-flex align-items-center">
                   <div className="support text-body-2 d-flex gap_12 align-items-center text_mono-dark-9">
                     <i className="icon-customer-support" />
-                    24/7 Support: (234) 109-6666
+                    24/7 Support: (+91) 9847762420,  (+353) 87 293 0719
                   </div>
                   <button
                     onClick={() => handleScroll('focus-areas')}
