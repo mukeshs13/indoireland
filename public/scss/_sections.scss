@@ -839,6 +839,7 @@
 
 .section-figures {
   background-color: #272727;
+  padding-bottom: 191px;
   padding-top: 60px;
 
   .wrap-counter {
@@ -859,9 +860,9 @@
       left: 50%;
       position: relative;
       transform: translateX(-50%);
-      path {
-        fill: #f7f2e9;
-      }
+      // path {
+      //   fill: #f7f2e9;
+      // }
     }
   }
   .shape-2 {

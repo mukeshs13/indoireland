@@ -31,38 +31,58 @@ export default function CaseStudies() {
       {/* Responsive Grid Container */}
       <div className="team-grid-container">
         <div className="team-grid">
-          {teamMembers2.map((member, index) => (
-            <div
-              key={index}
-              className="team-item v2 style-default hover-border hover-image"
-            >
-              {/* <a href="#" className="img-style mb_19">
-                <Image
-                  alt="avatar"
-                  src={member.image}
-                  width={406}
-                  height={406}
-                />
-              </a> */}
-              <div className="bot">
-                <div className="content">
-                  <h3 className="name team-member-name">
-                    <a href="#" className="link hover-line-text">
-                      {member.name}
-                    </a>
-                  </h3>
-                  <p className="text-body-1 team-member-role">{member.role}</p>
+          <div className="team-row">
+            {teamMembers2.slice(0, 3).map((member, index) => (
+              <div
+                key={index}
+                className="team-item v2 style-default hover-border hover-image"
+              >
+                <div className="bot">
+                  <div className="content">
+                    <h3 className="name team-member-name">
+                      <a href="#" className="link hover-line-text">
+                        {member.name}
+                      </a>
+                    </h3>
+                    <p className="text-body-1 team-member-role">{member.role}</p>
+                  </div>
+                  <ul className="social d-flex gap_12 justify-content-center">
+                    {socialIcons.map((icon, i) => (
+                      <li key={i}>
+                        <a href={icon.href} className={icon.className} />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="social d-flex gap_12 justify-content-center">
-                  {socialIcons.map((icon, i) => (
-                    <li key={i}>
-                      <a href={icon.href} className={icon.className} />
-                    </li>
-                  ))}
-                </ul>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="team-row">
+            {teamMembers2.slice(3, 5).map((member, index) => (
+              <div
+                key={index + 3}
+                className="team-item v2 style-default hover-border hover-image"
+              >
+                <div className="bot">
+                  <div className="content">
+                    <h3 className="name team-member-name">
+                      <a href="#" className="link hover-line-text">
+                        {member.name}
+                      </a>
+                    </h3>
+                    <p className="text-body-1 team-member-role">{member.role}</p>
+                  </div>
+                  <ul className="social d-flex gap_12 justify-content-center">
+                    {socialIcons.map((icon, i) => (
+                      <li key={i}>
+                        <a href={icon.href} className={icon.className} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -73,11 +93,31 @@ export default function CaseStudies() {
         }
 
         .team-grid {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
           max-width: 1200px;
           margin: 0 auto;
+        }
+
+        .team-row {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+        }
+
+        .team-row:nth-child(2) {
+          gap: 4rem;
+        }
+
+        .team-item {
+          flex: 0 0 auto;
+          width: 384px;
+        }
+
+        .team-row:nth-child(2) .team-item {
+          width: 400px;
         }
 
         .team-member-name {
@@ -91,9 +131,20 @@ export default function CaseStudies() {
 
         /* Tablet styles */
         @media (max-width: 1024px) {
-          .team-grid {
-            grid-template-columns: repeat(3, 1fr);
+          .team-row {
             gap: 1.5rem;
+          }
+
+          .team-row:nth-child(2) {
+            gap: 3rem;
+          }
+          
+          .team-item {
+            width: 200px;
+          }
+
+          .team-row:nth-child(2) .team-item {
+            width: 350px;
           }
           
           .team-member-name {
@@ -103,9 +154,20 @@ export default function CaseStudies() {
 
         /* Mobile landscape */
         @media (max-width: 768px) {
-          .team-grid {
-            grid-template-columns: repeat(2, 1fr);
+          .team-row {
             gap: 1rem;
+          }
+
+          .team-row:nth-child(2) {
+            gap: 2rem;
+          }
+          
+          .team-item {
+            width: 180px;
+          }
+
+          .team-row:nth-child(2) .team-item {
+            width: 280px;
           }
           
           .team-member-name {
@@ -124,12 +186,18 @@ export default function CaseStudies() {
           }
           
           .team-grid {
-            grid-template-columns: 1fr;
             gap: 1.5rem;
-            max-width: 350px;
+          }
+          
+          .team-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
           }
           
           .team-item {
+            width: 100%;
+            max-width: 350px;
             text-align: center;
             padding: 1.5rem 1rem;
           }

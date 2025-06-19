@@ -15,7 +15,7 @@ export default function Testimonials() {
             <p className="text-body-3">About Us</p>
           </div>
           <h2 className="title text_mono-dark-9 fw-5 split-text effect-right">
-            Driving your financial <span className="text-gradient">success</span> with strategic expertise and solutions
+            Driving your financial <span className="text-gradient">success</span> with <br /> strategic expertise and solutions
           </h2>
         </div>
         <div className="section-testimonial style-3">

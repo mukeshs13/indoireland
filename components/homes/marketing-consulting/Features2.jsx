@@ -118,7 +118,7 @@ export default function Features2() {
                 />
               </div>
               <div className="content">
-                <div className="heading effect-item effect-right">
+                <div className="heading mb_28 effect-item effect-right">
                   <h6 className="text_primary fw-5 mb_12 number">01</h6>
                   <h4 className="fw-5 mb_14 mb_24 title">
                     Business Consultation
@@ -127,8 +127,7 @@ export default function Features2() {
                     Develop Ireland-India business and trade activities
                   </p>
                 </div>
-                <div>
-                  <ul className="list effect-item effect-right effect-3 mb_56">
+                <ul className="list effect-item effect-right effect-3 mb_56">
                     <li className="text-body-1 text_white">
                       <i className="icon-check-cycle-line" /> We offering
                       customized strategies that truly work for you
@@ -146,7 +145,7 @@ export default function Features2() {
                       <i className="icon-check-cycle-line" /> Proven Results and
                       Client Satisfaction
                     </li>
-                  </ul>
+                </ul>
                   {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
                     <div className="avatar rounded-cycle overflow-hidden">
                       <Image
@@ -173,7 +172,6 @@ export default function Features2() {
                       </div>
                     </div>
                   </div> */}
-                </div>
               </div>
             </div>
           </div>
@@ -209,6 +207,10 @@ export default function Features2() {
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" /> Personalized
                     approaches crafted for your specific needs
+                  </li>
+                  <li className="text-body-1 text_white">
+                    <i className="icon-check-cycle-line" /> Strategic insights
+                    to turn your goals into measurable outcomes
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" /> Strategic insights

@@ -72,7 +72,7 @@ export default function Services() {
                         height={48}
                       />
                     </div>
-                    <h6 className="fw-5 mb_11">
+                    <h6 className="fw-5 mb_11" style={{ fontSize: '20px' }}>
                       <a href="#" className="link">
                         {service.title}
                       </a>

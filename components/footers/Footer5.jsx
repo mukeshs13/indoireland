@@ -90,7 +90,14 @@ export default function Footer5() {
             <div className="col-xl-10">
               <div className="footer-top mt_30">
                 <div className="footer-newsletter">
-                  
+                  <div className="footer-logo mb-0">
+                    <Image
+                      alt="logo"
+                      src="/images/logo/footer-logo-4.png"
+                      width={650}
+                      height={128}
+                    />
+                  </div>
                 </div>
                 <div className="wrap-social">
                   <h6 className="footer-heading text_white text_white fw-5">
@@ -404,7 +411,7 @@ export default function Footer5() {
                         Info@indoireland.com
                       </a>
                       <div className="text-body-2 text_white">
-                        Dublin, <br />
+                        Dublin,
                         Ireland, D1
                       </div>
                       <div className="text-body-2 text_white">
@@ -436,14 +443,7 @@ export default function Footer5() {
                       </a>
                     </li>
                   </ul>
-                  <div className="footer-logo mb-0">
-                    <Image
-                      alt="logo"
-                      src="/images/logo/footer-logo-4.png"
-                      width={650}
-                      height={128}
-                    />
-                  </div>
+                  
                 </div>
                 <p className="text-body-3 text-center text_mono-gray-5">
                   © {new Date().getFullYear()} Copyright by{" "}

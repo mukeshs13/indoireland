@@ -66,7 +66,6 @@ export default function Hero() {
                       width={slide.width}
                       height={slide.height}
                     />
-                    <h3 className="title text_white">{slide.title}</h3>
                   </div>
                 </SwiperSlide>
               ))}

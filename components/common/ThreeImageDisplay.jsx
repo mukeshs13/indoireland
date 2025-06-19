@@ -29,7 +29,7 @@ export default function ThreeImageDisplay(){
             spaceBetween: 72,
           },
           1200: {
-            slidesPerView: 1.98,
+            slidesPerView: 3,
             spaceBetween: 72,
           },
         }}
@@ -46,8 +46,8 @@ export default function ThreeImageDisplay(){
                   data-src={testimonial.imageSrc}
                   alt="testimonial"
                   src={testimonial.imageSrc}
-                  width={908}
-                  height={652}
+                  width={600}
+                  height={200}
                 />
               </div>
             </div>

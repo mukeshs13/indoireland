@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="section-contact style-default position-relative mb_30">
+    <div className="section-contact style-default position-relative mb_30" style={{ maxWidth: '1200px', margin: '30 auto', paddingTop: '40px', paddingBottom: '40px' }}>
       <div className="tf-container ">
         <div className="row">
           <div className="col-lg-6">
