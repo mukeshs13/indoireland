@@ -4,15 +4,28 @@ import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/data/services";
+
 export default function Footer5() {
   const [success, setSuccess] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
+
   const handleShowMessage = () => {
     setShowMessage(true);
     setTimeout(() => {
       setShowMessage(false);
     }, 2000);
   };
+
+  const handleScroll = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   const sendEmail = async (e) => {
     e.preventDefault(); // Prevent default form submission behavior
     const email = e.target.email.value;
@@ -40,6 +53,7 @@ export default function Footer5() {
       e.target.reset(); // Reset the form
     }
   };
+
   useEffect(() => {
     const headings = document.querySelectorAll(".footer-heading-mobile");
 
@@ -91,8 +105,9 @@ export default function Footer5() {
               </div>
               <div className="footer-body">
                 <div className="left flex-md-row">
-                  <div className="footer-col-block">
-                    <div className="text-body-1 footer-heading footer-heading-mobile text_white fw-5">
+                  {/* Desktop view - show services and home sections */}
+                  {/* <div className="footer-col-block d-none d-md-block">
+                    <div className="text-body-1 footer-heading text_white fw-5">
                       Services
                     </div>
                     <div className="tf-collapse-content">
@@ -112,61 +127,127 @@ export default function Footer5() {
                         ))}
                       </ul>
                     </div>
-                  </div>
-                  <div className="footer-col-block">
-                    <div className="text-body-1 footer-heading footer-heading-mobile text_white fw-5">
+                  </div> */}
+                  <div className="footer-col-block d-none d-md-block">
+                    <div 
+                      className="text-body-1 footer-heading text_white fw-5"
+                      onClick={() => handleScroll('home')}
+                      style={{ cursor: 'pointer' }}
+                    >
                       Home
                     </div>
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/about`}
+                          <button
+                            onClick={() => handleScroll('services')}
                             className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
                           >
-                            Page
-                          </Link>
+                            Services
+                          </button>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/contact-us`}
+                          <button
+                            onClick={() => handleScroll('focus-areas')}
                             className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
                           >
-                            Blog
-                          </Link>
+                            Focus Areas
+                          </button>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/portfolio`}
+                          <button
+                            onClick={() => handleScroll('team')}
                             className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
                           >
-                            Project
-                          </Link>
+                            Team
+                          </button>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/faqs`}
+                          <button
+                            onClick={() => handleScroll('about')}
                             className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
                           >
-                            Contact
-                          </Link>
+                            About Us
+                          </button>
+                        </li>
+                        <li className="text-body-3 text_mono-gray-8">
+                          <button
+                            onClick={() => handleScroll('contact')}
+                            className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
+                          >
+                            Contact Us
+                          </button>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div className="footer-col-block">
-                    <div className="text-body-1 footer-heading footer-heading-mobile text_white fw-5">
+                  {/* <div className="footer-col-block d-none d-md-block">
+                    <div className="text-body-1 footer-heading text_white fw-5">
                       Resources
                     </div>
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link
-                            href={`/about`}
+                          <button
+                            onClick={() => handleScroll('about')}
                             className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
                           >
                             About Advitex
-                          </Link>
+                          </button>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
                           <Link
@@ -184,19 +265,147 @@ export default function Footer5() {
                             FAQs
                           </Link>
                         </li>
+                        <li className="text-body-3 text_mono-gray-8">
+                          <button
+                            onClick={() => handleScroll('contact')}
+                            className="link footer-menu_item"
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: 'inherit',
+                              font: 'inherit',
+                              cursor: 'pointer',
+                              padding: 0,
+                              textAlign: 'left'
+                            }}
+                          >
+                            Contact Us
+                          </button>
+                        </li>
                       </ul>
                     </div>
+                  </div> */}
+
+                  {/* Mobile view - simple menu list without toggles */}
+                  <div className="footer-col-block d-block d-md-none">
+                    <div className="text-body-1 footer-heading text_white fw-5 mb-3">
+                      Menu
+                    </div>
+                    <ul className="footer-menu-list">
+                      <li className="text-body-3 text_mono-gray-8">
+                        <button
+                          onClick={() => handleScroll('home')}
+                          className="link footer-menu_item"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'inherit',
+                            font: 'inherit',
+                            cursor: 'pointer',
+                            padding: 0,
+                            textAlign: 'left'
+                          }}
+                        >
+                          Home
+                        </button>
+                      </li>
+                      <li className="text-body-3 text_mono-gray-8">
+                        <button
+                          onClick={() => handleScroll('services')}
+                          className="link footer-menu_item"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'inherit',
+                            font: 'inherit',
+                            cursor: 'pointer',
+                            padding: 0,
+                            textAlign: 'left'
+                          }}
+                        >
+                          Services
+                        </button>
+                      </li>
+                      <li className="text-body-3 text_mono-gray-8">
+                        <button
+                          onClick={() => handleScroll('focus-areas')}
+                          className="link footer-menu_item"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'inherit',
+                            font: 'inherit',
+                            cursor: 'pointer',
+                            padding: 0,
+                            textAlign: 'left'
+                          }}
+                        >
+                          Focus Areas
+                        </button>
+                      </li>
+                      <li className="text-body-3 text_mono-gray-8">
+                        <button
+                          onClick={() => handleScroll('team')}
+                          className="link footer-menu_item"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'inherit',
+                            font: 'inherit',
+                            cursor: 'pointer',
+                            padding: 0,
+                            textAlign: 'left'
+                          }}
+                        >
+                          Team
+                        </button>
+                      </li>
+                      <li className="text-body-3 text_mono-gray-8">
+                        <button
+                          onClick={() => handleScroll('about')}
+                          className="link footer-menu_item"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'inherit',
+                            font: 'inherit',
+                            cursor: 'pointer',
+                            padding: 0,
+                            textAlign: 'left'
+                          }}
+                        >
+                          About Us
+                        </button>
+                      </li>
+                      <li className="text-body-3 text_mono-gray-8">
+                        <button
+                          onClick={() => handleScroll('contact')}
+                          className="link footer-menu_item"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'inherit',
+                            font: 'inherit',
+                            cursor: 'pointer',
+                            padding: 0,
+                            textAlign: 'left'
+                          }}
+                        >
+                          Contact Us
+                        </button>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div className="right">
                   <div className="footer-about">
                     <div className="footer-info mb_51">
                       <a href="#" className="link text-body-2 text_white">
-                        themesflat@gmail.com
+                        Info@indoireland.com
                       </a>
                       <div className="text-body-2 text_white">
-                        152 Thatcher Road St, Mahattan, NY 10463, <br />
-                        United States
+                        Dublin, <br />
+                        Ireland, D1
                       </div>
                       <div className="text-body-2 text_white">
                         (+068) 568 9696

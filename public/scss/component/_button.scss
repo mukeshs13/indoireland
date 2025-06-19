@@ -5,7 +5,7 @@
     width: max-content;
     height: 48px;
     padding: 0 24px;
-    background-color: var(--Primary);
+    background-color: #fc6a2b;
     @include transition3();
     border-radius: 46px;
     @include transition3();
@@ -201,8 +201,8 @@
             background-color: var(--Primary);
         }
         &:hover {
-            background-color: var(--Primary);
-            border: 1px solid var(--Primary);
+            background-color: #fc6a2b;
+            // border: 1px solid var(--Primary);
             span {
                 color: var(--White) !important;
             }

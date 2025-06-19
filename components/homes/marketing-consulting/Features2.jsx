@@ -336,7 +336,7 @@ export default function Features2() {
                      Project Identification
                   </h4>
                   <p className="text-body-1 text_mono-gray-7">
-                    Support Ireland investors/individuals/companies for exploring Indian markets. And Indian to Ireland. Etc.
+                    Support Ireland investors/individuals/companies for exploring Indian markets.
                   </p>
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
