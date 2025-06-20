@@ -5,23 +5,11 @@ export const testimonials = [
   },
   {
     id: 2,
-    imageSrc: "/images/page-title/img-2.jpg",
+    imageSrc: "/images/page-title/img-3.png",
   },
   {
     id: 3,
-    imageSrc: "/images/page-title/img-3.jpg",
-  },
-  {
-    id: 1,
-    imageSrc: "/images/page-title/img-1.jpg",
-  },
-  {
-    id: 2,
     imageSrc: "/images/page-title/img-2.jpg",
-  },
-  {
-    id: 3,
-    imageSrc: "/images/page-title/img-3.jpg",
   },
   // Duplicates removed - you can add more unique testimonials if needed
 ];

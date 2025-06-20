@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="section-contact style-default position-relative" style={{ maxWidth: '1250px', margin: '0 auto', paddingTop: '40px', paddingBottom: '40px', marginBottom: '20px' }}>
-      <div className="tf-container" style={{ padding:"0 30px" }}>
+    <div className="section-contact style-default position-relative" style={{ paddingLeft: "30px", paddingRight: "30px" }}>
+      <div className="tf-container-2" style={{ padding:"30px", background: "linear-gradient(89.8deg, #ff3a2d -0.43%, #ffa13f 100.84%)", borderRadius: "26px" }}>
         <div className="row">
           <div className="col-lg-6">
             <div className="left">

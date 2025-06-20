@@ -88,7 +88,7 @@ export default function Footer5() {
         <div className="tf-container">
           <div className="row justify-content-center">
             <div className="col-xl-10">
-              <div className="footer-top mt_30">
+              <div className="footer-top mt_30" style={{marginBottom: '30px'}}>
                 <div className="footer-newsletter">
                   <div className="footer-logo mb-0">
                     <Image

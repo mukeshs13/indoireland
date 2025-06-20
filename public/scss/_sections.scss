@@ -567,9 +567,8 @@
 .section-contact {
   &.style-default {
     overflow: hidden;
-    background: linear-gradient(89.8deg, #ff3a2d -0.43%, #ffa13f 100.84%);
-    padding-top: 110px;
-    padding-bottom: 122px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-radius: 40px;
     .bot {
       .content {
@@ -860,9 +859,9 @@
       left: 50%;
       position: relative;
       transform: translateX(-50%);
-      // path {
-      //   fill: #f7f2e9;
-      // }
+      path {
+        fill: #f7f2e9;
+      }
     }
   }
   .shape-2 {

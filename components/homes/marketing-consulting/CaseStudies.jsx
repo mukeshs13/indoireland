@@ -95,7 +95,7 @@ export default function CaseStudies() {
         .team-grid {
           display: flex;
           flex-direction: column;
-          gap: 2rem;
+          gap: 3rem;
           max-width: 1200px;
           margin: 0 auto;
         }
