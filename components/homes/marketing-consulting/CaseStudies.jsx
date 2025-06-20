@@ -121,7 +121,8 @@ export default function CaseStudies() {
         }
 
         .team-member-name {
-          font-size: 24px;
+          font-size: 28px;
+          line-height: 36px
         }
 
         .team-member-role {
