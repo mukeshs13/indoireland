@@ -8,7 +8,7 @@ import OdometerComponent from "@/components/common/OdometerComponent";
 
 export default function ThreeImageDisplay(){
   return(
-    <div className="section-testimonial style-5 tf-spacing-16 pb-0">
+    <div className="section-testimonial style-5 pb-30 mb-0 pt-8" style={{paddingTop: '3rem'}}>
       <Swiper
         className="swiper"
         loop
@@ -40,7 +40,7 @@ export default function ThreeImageDisplay(){
             key={`${testimonial.id}-${index}`}
           >
             <div className="testimonial style-4">
-              <div className="img-style mb_40">
+              <div className="img-style mb_20">
                 <Image
                   className="lazyload"
                   data-src={testimonial.imageSrc}

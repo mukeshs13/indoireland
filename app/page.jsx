@@ -18,7 +18,7 @@ export const metadata = {
     "Advitex - Finance and Business Consulting React Nextjs Template",
 };
 
-export default function MarketingConsultionPage() {
+export default function HomePage() {
   return (
     <>
       <div className="primary-4">

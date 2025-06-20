@@ -48,6 +48,11 @@ export const teamMembers2 = [
     image: "/images/team/team-2.jpg",
   },
   {
+    name: "Adv Mgr Kumar Sunil",
+    role: "Director, Strategic Partnership Affair India International",
+    image: "/images/team/team-5.jpg",
+  },
+  {
     name: "Shri Jaffer Khan Puthuparambil Ismail",
     role: "Director, International Networking",
     image: "/images/team/team-3.jpg",
@@ -57,11 +62,7 @@ export const teamMembers2 = [
     role: "Director, Health Industry",
     image: "/images/team/team-4.jpg",
   },
-  {
-    name: "Adv Mgr Kumar Sunil",
-    role: "Director, Strategic Partnership Affair India International",
-    image: "/images/team/team-5.jpg",
-  },
+  
 ];
 
 export const teamMembers3 = [

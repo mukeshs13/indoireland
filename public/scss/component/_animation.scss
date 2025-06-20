@@ -267,17 +267,17 @@
 @keyframes spin {
     0% {
         transform: rotate(0deg);
-        box-shadow: 0 2px 0 #0075ff;
+        box-shadow: 0 2px 0 #fc6a2b;
     }
 
     50% {
         transform: rotate(180deg);
-        box-shadow: 0 2px 0 #0075ff;
+        box-shadow: 0 2px 0 #fc6a2b;
     }
 
     100% {
         transform: rotate(360deg);
-        box-shadow: 0 2px 0 #0075ff;
+        box-shadow: 0 2px 0 #fc6a2b;
     }
 }
 

@@ -378,7 +378,7 @@ export default function Footer5() {
                 </div>
               </div>
               <div className="footer-bottom">
-                <p className="text-body-3 text-center text_mono-gray-5">
+                <p className="text-body-3 text-start text_mono-gray-5 mt_30">
                   © {new Date().getFullYear()} Copyright by{" "}
                   <a href="#" className="link text_mono-gray-5 text-body-3">
                     Indoireland.
