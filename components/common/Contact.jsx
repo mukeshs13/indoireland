@@ -17,13 +17,15 @@ export default function Contact() {
               </div>
               <div className="bot">
                 <div className="content">
-                  <h6 className="mb_5 text-white">+068 5681 96 96</h6>
+                  <h6 className="mb_5 text-white">+91 9746864688, <br /> +91 9745782250</h6>
                   <p className="text-body-2 text-white">
-                    Call us for urgent
+                    Call us for urgent Inquiry
                   </p>
                 </div>
                 <Link 
-                  href={`/contact-us`} 
+                  href="https://maps.app.goo.gl/pznAE2GE6p3YUhrE7?g_st=com.google.maps.preview.copy"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="tf-btn btn-primary2 h36"
                   style={{
                     backgroundColor: 'white',

@@ -118,7 +118,7 @@ export const counterItems4 = [
   },
   {
     icon: "icon-mic-01",
-    label: "conference Conducted",
+    label: "Conference Conducted",
     value: 5,
     initialDisplay: 1,
     unit: "+",

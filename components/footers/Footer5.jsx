@@ -345,7 +345,7 @@ export default function Footer5() {
                               Cochin - Ernakulam, Kerala, India - 682304
                             </div>
                             <div className="text-body-3 text_white">
-                              (+91) 9847762420
+                              +91 9746864688, <br /> +91 9745782250
                             </div>
                           </div>
                         </div>

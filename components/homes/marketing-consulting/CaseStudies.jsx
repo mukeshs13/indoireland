@@ -35,24 +35,24 @@ export default function CaseStudies() {
             {teamMembers2.slice(0, 3).map((member, index) => (
               <div
                 key={index}
-                className="team-item v2 style-default hover-border hover-image"
+                className="team-item v2 style-default"
               >
                 <div className="bot">
                   <div className="content">
                     <h3 className="name team-member-name">
-                      <a href="#" className="link hover-line-text">
+                      <span className="no-hover-text">
                         {member.name}
-                      </a>
+                      </span>
                     </h3>
                     <p className="text-body-1 team-member-role">{member.role}</p>
                   </div>
-                  <ul className="social d-flex gap_12 justify-content-center">
+                  {/* <ul className="social d-flex gap_12 justify-content-center">
                     {socialIcons.map((icon, i) => (
                       <li key={i}>
                         <a href={icon.href} className={icon.className} />
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             ))}
@@ -61,24 +61,24 @@ export default function CaseStudies() {
             {teamMembers2.slice(3, 5).map((member, index) => (
               <div
                 key={index + 3}
-                className="team-item v2 style-default hover-border hover-image"
+                className="team-item v2 style-default"
               >
                 <div className="bot">
                   <div className="content">
                     <h3 className="name team-member-name">
-                      <a href="#" className="link hover-line-text">
+                      <span className="no-hover-text">
                         {member.name}
-                      </a>
+                      </span>
                     </h3>
                     <p className="text-body-1 team-member-role">{member.role}</p>
                   </div>
-                  <ul className="social d-flex gap_12 justify-content-center">
+                  {/* <ul className="social d-flex gap_12 justify-content-center">
                     {socialIcons.map((icon, i) => (
                       <li key={i}>
                         <a href={icon.href} className={icon.className} />
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             ))}
@@ -114,6 +114,15 @@ export default function CaseStudies() {
         .team-item {
           flex: 0 0 auto;
           width: 384px;
+          /* Remove all hover effects */
+          transition: none !important;
+        }
+
+        .team-item:hover {
+          transform: none !important;
+          box-shadow: none !important;
+          border-color: initial !important;
+          background: none !important;
         }
 
         .team-row:nth-child(2) .team-item {
@@ -122,12 +131,99 @@ export default function CaseStudies() {
 
         .team-member-name {
           font-size: 28px;
-          line-height: 36px
+          line-height: 36px;
+        }
+
+        .team-member-name a,
+        .team-member-name .no-hover-text {
+          text-decoration: none !important;
+          color: inherit !important;
+          transition: none !important;
+          cursor: default;
+        }
+
+        .team-member-name a:hover,
+        .team-member-name .no-hover-text:hover {
+          color: inherit !important;
+          text-decoration: none !important;
+          transform: none !important;
+        }
+
+        /* Disable hover line text effect */
+        .hover-line-text::after {
+          display: none !important;
         }
 
         .team-member-role {
           font-size: 16px;
           margin-top: 8px;
+        }
+
+        /* Override any inherited hover effects */
+        .team-item * {
+          transition: none !important;
+        }
+
+        .team-item *:hover {
+          transform: none !important;
+          color: inherit !important;
+          background: none !important;
+          border-color: inherit !important;
+          box-shadow: none !important;
+        }
+
+        /* Comprehensive hover effect removal */
+        .team-item,
+        .team-item *,
+        .team-item::before,
+        .team-item::after,
+        .team-item *::before,
+        .team-item *::after {
+          transition: none !important;
+          animation: none !important;
+        }
+
+        .team-item:hover,
+        .team-item:hover *,
+        .team-item:hover::before,
+        .team-item:hover::after,
+        .team-item:hover *::before,
+        .team-item:hover *::after {
+          opacity: 1 !important;
+          visibility: visible !important;
+          display: block !important;
+          transform: none !important;
+          color: inherit !important;
+          background: inherit !important;
+          border: inherit !important;
+          box-shadow: none !important;
+          text-decoration: none !important;
+        }
+
+        /* Specific fixes for text disappearing */
+        .team-member-name,
+        .team-member-name *,
+        .team-member-role,
+        .team-member-role * {
+          opacity: 1 !important;
+          visibility: visible !important;
+          color: inherit !important;
+        }
+
+        .team-member-name:hover,
+        .team-member-name:hover *,
+        .team-member-role:hover,
+        .team-member-role:hover * {
+          opacity: 1 !important;
+          visibility: visible !important;
+          color: inherit !important;
+          transform: none !important;
+        }
+
+        /* Disable any text effects */
+        .no-hover-text {
+          pointer-events: none;
+          user-select: none;
         }
 
         /* Tablet styles */

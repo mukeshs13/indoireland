@@ -13,9 +13,9 @@ import React from "react";
 
 export const metadata = {
   title:
-    "Marketing Consulting || Advitex - Finance and Business Consulting React Nextjs Template",
+    "Indoireland Pvt. Ltd. | India-Ireland Strategic Trade & Business Gateway",
   description:
-    "Advitex - Finance and Business Consulting React Nextjs Template",
+    "Indoireland connects India and Ireland through expert consulting, trade facilitation, and cross-border business support in IT, pharma, green energy, and exports.",
 };
 
 export default function HomePage() {
