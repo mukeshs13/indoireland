@@ -99,7 +99,7 @@ export default function Footer5() {
                     />
                   </div>
                 </div>
-                <div className="wrap-social">
+                {/* <div className="wrap-social">
                   <h6 className="footer-heading text_white text_white fw-5">
                     Our Social
                   </h6>
@@ -108,7 +108,7 @@ export default function Footer5() {
                     <a href="#" className="icon-instagram" />
                     <a href="#" className="icon-youtube" />
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="footer-body mb_10">
                 <div className="left flex-md-row">
